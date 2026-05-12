@@ -5,7 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+img {
+  max-width: 100%;
+  display: block;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -172,6 +175,7 @@ header ul {
 }
 .cta {
   margin: var(--space-xm);
+  display: inline-block;
 }
 .hero {
   background: url("images/hero-img.webp") no-repeat center/cover;
@@ -201,9 +205,9 @@ header ul {
 button {
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 .cta {
-  border: none;
   background-color: var(--primary);
   color: white;
   font-weight: var(--fw-md);
@@ -233,4 +237,135 @@ h1 {
     width: 100%;
     margin-bottom: var(--space-sm);
   }
+}
+.tab-content .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+}
+.card {
+  background-color: var(--card);
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+.card img {
+  border-radius: var(--radius-sm);
+  max-width: 100%;
+  margin-bottom: var(--space-md);
+  /* padding: 10px; */
+  object-fit: contain;
+}
+.price span {
+  color: var(--accent);
+}
+.price {
+  margin-bottom: var(--space-sm);
+  color: var(--text);
+}
+.cart-btn {
+  font-size: var(--fs-md);
+  padding: var(--space-md);
+  background-color: var(--primary);
+  color: var(--text);
+  font-weight: var(--fw-md);
+  border-radius: var(--radius-sm);
+  transition: 0.3s;
+  width: 100%;
+}
+.cart-btn:hover,
+.heart-btn:hover {
+  background-color: var(--primary-hover);
+}
+h3 {
+  font-weight: var(--fw-md);
+  cursor: pointer;
+  line-height: 1.6;
+}
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+.heart-btn {
+  background-color: var(--primary);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  font-size: var(--fs-);
+  color: #fff;
+  font-weight: var(--fw-bold);
+}
+@media (min-width: 2051px) {
+  .cart-btn {
+    font-size: 1rem;
+  }
+  .tab-container {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1000px) and (max-width: 2050px) {
+  .tab-container {
+    justify-content: center;
+  }
+}
+input[type="radio"] {
+  display: none;
+}
+.tab-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  overflow: scroll;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.tab-btn {
+  padding: var(--space-lg) var(--space-2xl);
+  background-color: var(--card);
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-md);
+  transition: 0.3s;
+  color: var(--text-muted);
+}
+.tab-btn:hover {
+  background-color: var(--primary-hover);
+  color: white;
+}
+
+#tab1:checked ~ .tab-container label[for="tab1"],
+#tab2:checked ~ .tab-container label[for="tab2"],
+#tab3:checked ~ .tab-container label[for="tab3"],
+#tab4:checked ~ .tab-container label[for="tab4"],
+#tab5:checked ~ .tab-container label[for="tab5"] {
+  background-color: var(--primary);
+  color: #fff;
+}
+.tab-content {
+  display: none;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+.heading {
+  padding: var(--space-lg);
+}
+.heading h2 {
+  font-weight: var(--fw-md);
+  text-align: center;
+  font-size: var(--fs-xl);
+}
+.heading span {
+  margin-top: -1rem;
+  text-align: center;
+  display: block;
+  color: var(--text-muted);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-sm);
+  position: relative;
 }

@@ -17,7 +17,17 @@
     <header>
       <div class="container">
         <a href="#" class="logo">
-       <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="m826-585-46.67-46.67 40-40.33L672-819.33l-40.33 40L584-827l30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L94.67-242.33q-19-19.26-19-47.3 0-28.04 19-47.04L134-376l47.67 47-40.34 40L289-141.33l40-40.34L376-134l-30 30Zm397-317.33L818.67-497 497-818.67 421.33-743 743-421.33Zm-280 280L539.33-218 218-539.33 141.33-463 463-141.33Zm4-243.34 109.33-109-82.66-82.66-109 109.33L467-384.67Zm43 290q-18.96 19-46.98 19-28.02 0-47.02-19L94.67-416q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19L337-514l110-110-72.33-72q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19l321.66 321.66q19 19.26 19 47.3 0 28.04-19 47.04L790-374.67q-18.96 19-46.98 19-28.02 0-47.02-19L624-447 514-337l72.33 72.33q19 19.26 19 47.3 0 28.04-19 47.04L510-94.67Z"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 -960 960 960"
+            width="30px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="m826-585-46.67-46.67 40-40.33L672-819.33l-40.33 40L584-827l30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L94.67-242.33q-19-19.26-19-47.3 0-28.04 19-47.04L134-376l47.67 47-40.34 40L289-141.33l40-40.34L376-134l-30 30Zm397-317.33L818.67-497 497-818.67 421.33-743 743-421.33Zm-280 280L539.33-218 218-539.33 141.33-463 463-141.33Zm4-243.34 109.33-109-82.66-82.66-109 109.33L467-384.67Zm43 290q-18.96 19-46.98 19-28.02 0-47.02-19L94.67-416q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19L337-514l110-110-72.33-72q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19l321.66 321.66q19 19.26 19 47.3 0 28.04-19 47.04L790-374.67q-18.96 19-46.98 19-28.02 0-47.02-19L624-447 514-337l72.33 72.33q19 19.26 19 47.3 0 28.04-19 47.04L510-94.67Z"
+            />
+          </svg>
           Aurex
         </a>
         <input type="checkbox" id="menu-toggle" />
@@ -28,7 +38,7 @@
         </label>
         <ul>
           <li><a class="header-link" href="#">Home</a></li>
-          <li><a class="header-link" href="#">Shop</a></li>
+          <li><a class="header-link" href="#shop">Shop</a></li>
           <li><a class="header-link" href="#">Contact</a></li>
           <li><a class="header-link" href="#">Cart</a></li>
         </ul>
@@ -41,9 +51,476 @@
           Discover high-quality fitness gear and performance essentials built
           for athletes who never settle for average.
         </p>
-        <button type="button" class="cta primary">Start Shopping</button>
-        <button type="button" class="cta secondary">Learn More</button>
+        <a href="#shop" class="cta primary">Start Shopping</a>
+        <a href="#" class="cta secondary">Learn More</a>
       </div>
     </section>
+    <main id="shop">
+      <div class="heading">
+        <h2>Our Products</h2>
+        <span>Everything you need to build strength and performance</span>
+      </div>
+      <input type="radio" name="tabs" id="tab1" checked />
+      <input type="radio" name="tabs" id="tab2" />
+      <input type="radio" name="tabs" id="tab3" />
+      <input type="radio" name="tabs" id="tab4" />
+      <input type="radio" name="tabs" id="tab5" />
+
+      <section class="tab-container container">
+        <label for="tab1" class="tab-btn">All</label>
+        <label for="tab2" class="tab-btn">Supplements</label>
+        <label for="tab3" class="tab-btn">Clothes</label>
+        <label for="tab4" class="tab-btn">Equipment</label>
+        <label for="tab5" class="tab-btn">Accessories</label>
+      </section>
+
+      <section class="tab-content" id="content1">
+        <div class="container">
+          <div class="card">
+            <img src="images/whey.webp" alt="Whey Protein" />
+            <h3>Whey Protein</h3>
+            <p class="price">$45 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/creatine.png" alt="Creatine Powder" />
+            <h3>Creatine Powder</h3>
+            <p class="price">$40 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/tshirt.avif" alt="Compression T Shirt" />
+            <h3>Compression T-Shirt</h3>
+            <p class="price">$15 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/shoes.avif" alt="Knit Sneakers EU37-47" />
+            <h3>Knit Sneakers EU37-47</h3>
+            <p class="price">$20 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/kettlebell.jpg" alt="Cast Iron Kettlebell" />
+            <h3>Cast Iron Kettlebell</h3>
+            <p class="price">$60 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/serious-mass.webp" alt="Serious Mass Strawbery" />
+            <h3>Serious Mass Strawbery</h3>
+            <p class="price">$55 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/hoodie.jpg" alt="Black Oversized Hoodie " />
+            <h3>Black Oversized Hoodie</h3>
+            <p class="price">$30 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/pants.webp" alt="Black Jogging Pants" />
+            <h3>Black Jogging Pants</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/pre-workout.jpg"
+              alt="Creatine Gummies Pre-workout"
+            />
+            <h3>Creatine Gummies</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/gloves.jpg" alt="Gloves" />
+            <h3>Black Gloves</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/resistance-band.jpg" alt="Resistance Band" />
+            <h3>Resistance Band</h3>
+            <p class="price">$10 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/dumbbell.jpg" alt="TREXO Hexagon Dumbbells" />
+            <h3>Hexagon Dumbbell</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/barbell.webp" alt="Barbell" />
+            <h3>Barbell</h3>
+            <p class="price">$70 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/belt.jpg" alt="Leather Parallel Belt" />
+            <h3>Leather Parallel Belt</h3>
+            <p class="price">$20 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/straps.jpg" alt="XSport Weight Straps" />
+            <h3>XSport Weight Straps</h3>
+            <p class="price">$20 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/bottle.avif" alt="Sports Water Bottle " />
+            <h3>Sports Water Bottle</h3>
+            <p class="price">$10 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab-content" id="content2">
+        <div class="container">
+          <div class="card">
+            <img src="images/whey.webp" alt="Whey Protein" />
+            <h3>Whey Protein</h3>
+            <p class="price">$45 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/creatine.png" alt="Creatine Powder" />
+            <h3>Creatine Powder</h3>
+            <p class="price">$40 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/serious-mass.webp" alt="Serious Mass Strawbery" />
+            <h3>Serious Mass Strawbery</h3>
+            <p class="price">$55 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="images/pre-workout.jpg"
+              alt="Creatine Gummies Pre-workout"
+            />
+            <h3>Creatine Gummies</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab-content" id="content3">
+        <div class="container">
+          <div class="card">
+            <img src="images/tshirt.avif" alt="Compression T Shirt" />
+            <h3>Compression T-Shirt</h3>
+            <p class="price">$15 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/shoes.avif" alt="Knit Sneakers EU37-47" />
+            <h3>Knit Sneakers EU37-47</h3>
+            <p class="price">$20 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/hoodie.jpg" alt="Black Oversized Hoodie " />
+            <h3>Black Oversized Hoodie</h3>
+            <p class="price">$30 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/pants.webp" alt="Black Jogging Pants" />
+            <h3>Black Jogging Pants</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab-content" id="content4">
+        <div class="container">
+          <div class="card">
+            <img src="images/kettlebell.jpg" alt="Cast Iron Kettlebell" />
+            <h3>Cast Iron Kettlebell</h3>
+            <p class="price">$60 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/resistance-band.jpg" alt="Resistance Band" />
+            <h3>Resistance Band</h3>
+            <p class="price">$10 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/dumbbell.jpg" alt="TREXO Hexagon Dumbbells" />
+            <h3>Hexagon Dumbbell</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/barbell.webp" alt="Barbell" />
+            <h3>Barbell</h3>
+            <p class="price">$70 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab-content" id="content5">
+        <div class="container">
+          <div class="card">
+            <img src="images/gloves.jpg" alt="Gloves" />
+            <h3>Black Gloves</h3>
+            <p class="price">$50 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/belt.jpg" alt="Leather Parallel Belt" />
+            <h3>Leather Parallel Belt</h3>
+            <p class="price">$20 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/straps.jpg" alt="XSport Weight Straps" />
+            <h3>XSport Weight Straps</h3>
+            <p class="price">$20 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/bottle.avif" alt="Sports Water Bottle " />
+            <h3>Sports Water Bottle</h3>
+            <p class="price">$10 <span>★★★★★</span></p>
+            <div class="actions">
+              <button type="button" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button type="button" class="heart-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
