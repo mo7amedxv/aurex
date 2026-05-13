@@ -466,3 +466,6 @@ input[type="radio"] {
   box-shadow: 0 0 0 2px #ffffff30;
   transform:translateY(-5px);
 }
+@media (max-width:850px) {
+  .tab-container{justify-content: flex-start;}
+}
