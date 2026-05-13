@@ -372,7 +372,10 @@ input[type="radio"] {
   font-size: var(--fs-sm);
   position: relative;
 }
-#shop,#features{padding: var(--space-lg) 0;}
+#shop,
+#features {
+  padding: var(--space-lg) 0;
+}
 .features .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
