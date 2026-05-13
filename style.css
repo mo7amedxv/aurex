@@ -40,14 +40,14 @@ html {
   --fw-light: 400;
   --fw-md: 600;
   --fw-bold: 800;
-  --fs-xl: clamp(1rem, calc(2vw + 1.5rem), 4rem);
+  --fs-xl: clamp(2rem, 5vw, 4rem);
   --fs-lg: clamp(1.5rem, calc(1vw + 0.5rem), 3rem);
-  --fs-md: clamp(1rem, calc(0.5vw + 0.5rem), 2rem);
+  --fs-md: clamp(1.2rem, calc(0.5vw + 0.5rem), 2rem);
   --fs-sm: clamp(0.75rem, calc(0.5vw + 0.5rem), 1.5rem);
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1345px;
   padding: 1rem;
   margin: 0 auto;
 }
@@ -182,7 +182,7 @@ header ul {
 }
 .hero {
   background: url("images/hero-img.webp") no-repeat center/cover;
-  height: min(550px, calc(100svh - 100px));
+  height: min(600px, calc(100svh - 100px));
   position: relative;
   display: flex;
   align-items: center;
@@ -214,7 +214,7 @@ button {
   background-color: var(--primary);
   color: white;
   font-weight: var(--fw-md);
-  padding: 0.75rem 1.5rem;
+  padding: 0.9rem 1.6rem;
   border-radius: var(--radius-lg);
   transition: 0.3s;
   font-size: var(--fs-md);
@@ -235,7 +235,7 @@ h1 {
   font-size: var(--fs-xl);
   margin-bottom: var(--space-sm);
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .cta {
     width: 100%;
     margin-bottom: var(--space-sm);
@@ -301,20 +301,14 @@ h3 {
   .cart-btn {
     font-size: 1rem;
   }
-  .tab-container {
-    justify-content: flex-start;
-  }
+
   @-moz-document url-prefix() {
     .secondary {
       box-shadow: 0 0 0 3px var(--text-muted);
     }
   }
 }
-@media (min-width: 1000px) and (max-width: 2050px) {
-  .tab-container {
-    justify-content: center;
-  }
-}
+
 
 input[type="radio"] {
   display: none;
@@ -326,6 +320,7 @@ input[type="radio"] {
   overflow: scroll;
   scrollbar-width: none;
   width: 100%;
+      justify-content: center;
 }
 
 .tab-btn {
@@ -368,6 +363,7 @@ input[type="radio"] {
   font-weight: var(--fw-bold);
   text-align: center;
   font-size: var(--fs-xl);
+  letter-spacing: 1px;
 }
 .heading span {
   margin-top: -1rem;
@@ -379,10 +375,12 @@ input[type="radio"] {
   position: relative;
 }
 #shop,
-#features {
+#features,
+#testmonials {
   padding: var(--space-lg) 0;
 }
-#features {
+#features,
+#testmonials {
   background-color: var(--section);
 }
 .features .container {
@@ -426,4 +424,45 @@ input[type="radio"] {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #182846;
+}
+.testmonials .container {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.testmonials h3 {
+  line-height: 0.7;
+  font-weight: var(--fw-md);
+}
+.role {
+  color: var(--text-muted);
+  margin-bottom: -0.25rem;
+  font-weight: var(--fw-light);
+  font-size: var(--fs-md);
+}
+.rating {
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+  font-size: var(--fs-sm);
+}
+.review {
+  opacity: 0.9;
+  font-weight: var(--fw-light);
+  font-size: var(--fs-sm);
+  line-height: 1.8;
+}
+.testmonials img {
+  width: 80px;
+  border-radius: 50%;
+}
+.testmonials .card {
+  padding: var(--space-md);
+ transition: 0.3s;
+  box-shadow: 0 0 0 1px #ffffff15;
+}
+
+.testmonials .card:hover {
+  padding: var(--space-md);
+  box-shadow: 0 0 0 2px #ffffff30;
+  transform:translateY(-5px);
 }
