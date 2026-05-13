@@ -508,6 +508,7 @@ footer {
   .links-container a {
     width: fit-content;
   }
+  
 }
 footer h3 {
   text-align: left;
@@ -532,6 +533,9 @@ footer h3 {
   }
   .links-container h3 {
     text-align: center;
+  }
+    .copyright {
+    font-size: var(--fs-sm);
   }
 }
 @media (min-width: 2400px) {
