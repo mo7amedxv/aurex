@@ -309,7 +309,6 @@ h3 {
   }
 }
 
-
 input[type="radio"] {
   display: none;
 }
@@ -320,7 +319,7 @@ input[type="radio"] {
   overflow: scroll;
   scrollbar-width: none;
   width: 100%;
-      justify-content: center;
+  justify-content: center;
 }
 
 .tab-btn {
@@ -366,7 +365,7 @@ input[type="radio"] {
   letter-spacing: 1px;
 }
 .heading span {
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   text-align: center;
   display: block;
   color: var(--text-muted);
@@ -457,15 +456,17 @@ input[type="radio"] {
 }
 .testmonials .card {
   padding: var(--space-md);
- transition: 0.3s;
+  transition: 0.3s;
   box-shadow: 0 0 0 1px #ffffff15;
 }
 
 .testmonials .card:hover {
   padding: var(--space-md);
   box-shadow: 0 0 0 2px #ffffff30;
-  transform:translateY(-5px);
+  transform: translateY(-5px);
 }
-@media (max-width:850px) {
-  .tab-container{justify-content: flex-start;}
+@media (max-width: 850px) {
+  .tab-container {
+    justify-content: flex-start;
+  }
 }
