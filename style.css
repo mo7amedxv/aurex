@@ -320,7 +320,7 @@ input[type="radio"] {
 }
 
 .tab-btn {
-  padding: var(--space-lg) var(--space-2xl);
+  padding: var(--space-md) var(--space-2xl);
   background-color: var(--card);
   cursor: pointer;
   border-radius: var(--radius-md);
