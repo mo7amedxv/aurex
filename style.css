@@ -365,7 +365,7 @@ input[type="radio"] {
   letter-spacing: 1px;
 }
 .heading span {
-  margin-top: -0.5rem;
+  margin-top: -1rem;
   text-align: center;
   display: block;
   color: var(--text-muted);
@@ -373,6 +373,7 @@ input[type="radio"] {
   font-size: var(--fs-sm);
   position: relative;
 }
+
 #shop,
 #features,
 #testmonials {
@@ -468,5 +469,8 @@ input[type="radio"] {
 @media (max-width: 850px) {
   .tab-container {
     justify-content: flex-start;
+  }
+  .heading span {
+    margin-top: -0.5rem;
   }
 }
