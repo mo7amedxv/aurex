@@ -267,6 +267,7 @@ h1 {
   color: var(--text);
 }
 .cart-btn {
+  text-wrap:nowrap;
   font-size: var(--fs-md);
   padding: var(--space-md);
   background-color: var(--primary);
