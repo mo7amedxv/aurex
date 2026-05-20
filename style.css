@@ -211,6 +211,12 @@ header ul {
   margin-bottom: var(--space-lg);
   max-width: 650px;
   justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 button {
   font-family: inherit;
@@ -597,4 +603,12 @@ footer h3 {
   .hero p {
     color: #999;
   }
+}
+.tab-container::-webkit-scrollbar {
+  display: none;
+}
+.tab-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
 }
