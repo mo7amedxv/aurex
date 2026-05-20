@@ -183,7 +183,8 @@ header ul {
 }
 .hero {
   background: url("images/hero-img.webp") no-repeat center/cover;
-  height: min(600px, calc(100svh - 100px));
+  height: calc(100svh - 100px);
+  min-height: 500px;
   position: relative;
   display: flex;
   align-items: center;
